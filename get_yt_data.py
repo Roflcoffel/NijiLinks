@@ -5,7 +5,6 @@ import json
 HOLOLIVE_DATA_PATH = "_data/hololive.json"
 API_KEY = ""
 
-
 #Extract relevant data from a playlist request
 #Here we select the fields: in items array select snippet.publishedAt, snippet.title, snippet.thumbnails
 class Video:
