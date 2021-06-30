@@ -1,0 +1,43 @@
+.material-icons.md-48 { font-size: 48px; }
+
+body {
+  margin-top: 80px;
+  font-family: 'Work Sans', sans-serif;
+  background:#ffffff; 
+  color:rgb(0, 0, 0); 
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  color: #2eb6dc;
+  text-align: center;
+}
+
+h2 {
+  color: #49c8f0; 
+}
+
+h5 {
+  margin: 20px;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  color: #49c8f0; 
+}
+
+a:hover, div.fixed:hover {
+  color: #8860ff;
+}
+
+.icon {
+  width: auto;
+  height: 32px;
+  margin: 10px;
+
+}

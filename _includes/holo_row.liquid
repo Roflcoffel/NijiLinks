@@ -1,0 +1,10 @@
+{% for holo in site.data.hololive %}
+	{% if holo.region == {{include.region}} %}
+		<div class="row">
+			<div class="col">
+				<img src="{{ holo.image_path }}" class='rounded-circle' alt='Hololive'>
+				<a href="{{ holo.url }}"><h5>{{ holo.name }}</h5></a>
+			</div>
+		</div>
+	{% endif %}
+{% endfor %}

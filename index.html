@@ -1,0 +1,34 @@
+---
+layout: default
+title: HoloLinks
+---
+<div class="container">
+	<h1>Hololive Channels</h1>
+
+	{% include navigation.html href="/video.html" name="Videos" %}
+
+	<br />
+
+	<div id="hololive-en">
+		<h2>Hololive EN</h2>
+		<hr />
+		{% include holo_col.liquid region="en" %}	
+	</div>
+	<div id="hololive-id">
+		<h2>Hololive ID</h2>
+		<hr />
+		{% include holo_col.liquid region="id" %}
+	</div>
+	<div id="hololive-jp">
+		<h2>Hololive JP</h2>
+		<hr />
+		{% include holo_col.liquid region="jp" %}
+	</div>
+</div>
+
+
+
+
+
+
+
