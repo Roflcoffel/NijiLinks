@@ -331,16 +331,16 @@
 	   "name":"Usada Pekora",
 	   "region":"jp",
 	   "url":"https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ",
-	   "twitch_url": "",
+	   "twitch_url": "https://www.twitch.tv/usadapekora_hololive",
 	   "image_path":"assets/images/pekora_jp.jpg",
 	   "gen":"3"
 	},
 	{
-		"name":"AZKi",
-		"region":"jp",
-		"url":"https://www.youtube.com/channel/UC0TXe_LYZ4scaW2XMyi5_kw",
-		"twitch_url": "",
-		"image_path":"assets/images/azki.jpg",
-		"gen":"1"
+	   "name":"AZKi",
+	   "region":"jp",
+	   "url":"https://www.youtube.com/channel/UC0TXe_LYZ4scaW2XMyi5_kw",
+	   "twitch_url": "",
+	   "image_path":"assets/images/azki.jpg",
+	   "gen":"1"
 	 }
 ]
