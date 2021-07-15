@@ -6,6 +6,8 @@ import os, sys
 HOLOLIVE_DATA_PATH = "../_data/hololive.json"
 OUPUT_PATH         = "../_data/holovideo.json"
 
+NUMBER_OF_LATEST_VIDEOS = 3
+
 #Set API_KEY this should be stored in an environment variable called YT_API
 API_KEY = os.getenv("YT_API", "None")
 
@@ -71,7 +73,7 @@ def main():
 	
 	for id in playlistIds:
 		# Request the latest videos from the youtube data api.
-		items = get_latest_videos(id, 2)["items"]
+		items = get_latest_videos(id, NUMBER_OF_LATEST_VIDEOS)["items"]
 	
 		# Latest videos from one holomember
 		channel_videos = []
@@ -79,7 +81,7 @@ def main():
 		# Extract the info we want from "items"
 		for item in items:
 			snippet = item["snippet"]
-			channel_videos.append(Video(snippet["publishedAt"], snippet["title"], snippet["thumbnails"]["default"], snippet["resourceId"]["videoId"]))
+			channel_videos.append(Video(snippet["publishedAt"], snippet["title"], snippet["thumbnails"]["medium"], snippet["resourceId"]["videoId"]))
 
 		all_channels.append(channel_videos)
 

@@ -20,8 +20,12 @@ h2 {
   color: #49c8f0; 
 }
 
-h5 {
-  margin: 20px;
+.extra-margin {
+  margin: 25px;
+}
+
+.extra-margin-top {
+  margin-top: 15px;
 }
 
 div.fixed {
