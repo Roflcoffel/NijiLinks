@@ -1,36 +1,23 @@
 ## HoloLinks
 
-**get_yt_data.py** - handles all yt request, save it in an json that acts as the db.
-the rest of the site is static and only displays the data from the json db file.
-
-the site will be regenerated when there is a change in the json db file.
-this can be done by **entr** or **get_yt_data.py**
-
-TODO:
-- See who is live and upcoming videos!
-- 3 Latest videos from each member
-
-#### See who is live and upcoming videos!
-- Get The data (Search.list)
-- Save it in a Object
+A static site with links to holomembers channels, also shows the latest videos.
 
 ---
 
-#### 3 Latest videos from each member
-get_yt_data.py will make a request for the data
-
 TODO:
-- Convert a youtube channel link to "uploaded", change the C to a U.
-- Create an object for holding the return data
-- Save the object in an json file
+1. Show who is live, and show the upcoming videos
+	- The youtube API does not make this easy...
+2. Add a nijisanji page or create a fork for with nijisanji.
+3. Activate github pages, and host it on github.
+4. Create instructions for how to build and generate a local version.
 
-Example Url:
+---
 
-	https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UU1opHUrw8rvnsadT-iGp7Cg&maxResult=3&key=APIKEY
+**get_yt_data.py** - currently gets the 3 latest videos.
 
-Gets the three latest videos from aqua!
+To regenerate the site when .json is updated we can use **entr** or do it in **get_yt_data.py**.
+See if github pages has the ability to run scripts.
 
-Design / Function:
-- Each members picture on the left in a row each.
-- to the right of the picture the 3 latest videos.
-- the ability to change the order either from a file or in the ui.
+#### To Get Upcoming and Live status 
+- Get The data (Search.list) (Cost: 100)
+- Save it in a Object
