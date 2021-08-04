@@ -1,29 +1,30 @@
 ---
 layout: default
-title: HoloLinks
+title: NijiLinks
+cur: Nijisanji
 ---
 <div class="container">
-	<h1>Hololive Channels</h1>
+	<h1>{{page.cur}} Channels</h1>
 
 	{% include navigation.html href="/video.html" name="Videos" %}
 
 	<br />
 
 	<div id="hololive-en">
-		<h2>Hololive EN</h2>
+		<h2>{{page.cur}} EN</h2>
 		<hr />
 		{% include holo_col.liquid region="en" %}	
 	</div>
-	<div id="hololive-id">
-		<h2>Hololive ID</h2>
+	<!-- <div id="hololive-id">
+		<h2>{{page.niji}} ID</h2>
 		<hr />
 		{% include holo_col.liquid region="id" %}
 	</div>
 	<div id="hololive-jp">
-		<h2>Hololive JP</h2>
+		<h2>{{page.niji}} JP</h2>
 		<hr />
 		{% include holo_col.liquid region="jp" %}
-	</div>
+	</div> -->
 </div>
 
 

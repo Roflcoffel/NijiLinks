@@ -1,0 +1,50 @@
+[
+	{
+	   "name":"Selen Tatsuki",
+	   "region":"en",
+	   "youtube_url":"UCV1xUwfM2v2oBtT3JNvic3w",
+	   "twitch_url": "",
+	   "image_path":"assets/images/selen.webp",
+	   "gen":"2"
+	},
+	{
+		"name":"Rosemi Lovelock",
+		"region":"en",
+		"youtube_url":"UC4WvIIAo89_AzGUh1AZ6Dkg",
+		"twitch_url": "",
+		"image_path":"assets/images/rosemi.webp",
+		"gen":"2"
+	},
+	{
+		"name":"Petra Gurin",
+		"region":"en",
+		"youtube_url":"UCgA2jKRkqpY_8eysPUs8sjw",
+		"twitch_url": "",
+		"image_path":"assets/images/petra.webp",
+		"gen":"2"
+	},
+	{
+		"name":"Elira Pendora",
+		"region":"en",
+		"youtube_url":"UCIeSUTOTkF9Hs7q3SGcO-Ow",
+		"twitch_url": "",
+		"image_path":"assets/images/elira.webp",
+		"gen":"1"
+	},
+	{
+		"name":"Pomu Rainpuff",
+		"region":"en",
+		"youtube_url":"UCP4nMSTdwU1KqYWu3UH5DHQ",
+		"twitch_url": "",
+		"image_path":"assets/images/pomu.webp",
+		"gen":"1"
+	},
+	{
+		"name":"Finana Ryugu",
+		"region":"en",
+		"youtube_url":"UCu-J8uIXuLZh16gG-cT1naw",
+		"twitch_url": "",
+		"image_path":"assets/images/finana.webp",
+		"gen":"1"
+	}
+]

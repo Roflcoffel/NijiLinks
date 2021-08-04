@@ -1,13 +1,13 @@
 {% assign yt = "https://www.youtube.com/watch?v=" %}
-{% for holo in site.data.hololive %}
-	{% assign holo_videos = site.data.holovideo[forloop.index0] %}
-	{% if holo.region == {{include.region}} %}
+{% for niji in site.data.nijisan %}
+	{% assign niji_videos = site.data.nijivideo[forloop.index0] %}
+	{% if niji.region == {{include.region}} %}
 		<div class="row">
 			<div class="col-sm-2 center">
-				<img src="{{ holo.image_path }}" class='rounded-circle' alt='Hololive'>
-				<a href="{{ holo.url }}"><h5 class="extra-margin-top">{{ holo.name }}</h5></a>
+				<img src="{{ niji.image_path }}" class='rounded-circle' alt='Nijisanji'>
+				<a href="https://www.youtube.com/channel/{{ niji.youtube_url }}"><h5 class="extra-margin-top">{{ niji.name }}</h5></a>
 			</div>
-			{% for video in holo_videos %}
+			{% for video in niji_videos %}
 				<div class="col">
 					<a href="{{ yt | append: video.videoId }}"><img src="{{ video.thumbnail.url }}" class='img-thumbnail' alt='Thumbnail'></a> 
 					<h6>{{ video.title }}</h6>

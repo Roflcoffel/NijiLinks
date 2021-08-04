@@ -1,8 +1,8 @@
 .material-icons.md-48 { font-size: 48px; }
 
 img {
-  height: 176px; 
-  width: 176px;
+  width: 192px;
+  height: 255px;
 }
 
 body {
@@ -17,12 +17,12 @@ body {
 }
 
 h1 {
-  color: #2eb6dc;
+  color: #882edc;
   text-align: center;
 }
 
 h2 {
-  color: #49c8f0; 
+  color: #6849f0; 
 }
 
 .extra-margin {
@@ -37,16 +37,19 @@ div.fixed {
   position: fixed;
   bottom: 100px;
   right: 100px;
-  color: #49c8f0; 
+  color: #6849f0;; 
 }
 
 a:hover, div.fixed:hover {
-  color: #8860ff;
+  color: #e460ff;
+}
+
+a {
+  color: #882edc
 }
 
 .icon {
   width: auto;
   height: 32px;
   margin: 10px;
-
 }

@@ -1,6 +1,6 @@
 {% assign i = 0 %}
-{% for holo in site.data.hololive %}
-	{% if holo.region == {{include.region}} %}
+{% for niji in site.data.nijisan %}
+	{% if niji.region == {{include.region}} %}
 		{% assign remainder = i | modulo: 5 %}
 
 		{% if remainder == 0 %}
@@ -8,8 +8,8 @@
 		{% endif %}
 
 		<div class="col center">
-			<img src="{{ holo.image_path }}" class='rounded-circle' alt='Hololive'>
-			<a href="https://www.youtube.com/channel/{{ holo.youtube_url }}"><h5 class='extra-margin'>{{ holo.name }}</h5></a>
+			<img src="{{ niji.image_path }}" class='rounded-circle' alt='Nijisanji'>
+			<a href="https://www.youtube.com/channel/{{ niji.youtube_url }}"><h5 class='extra-margin'>{{ niji.name }}</h5></a>
 		</div>
 
 		{% if remainder == 4 %}

@@ -3,8 +3,8 @@ import requests
 import json
 import os, sys
 
-HOLOLIVE_DATA_PATH = "../_data/hololive.json"
-OUPUT_PATH         = "../_data/holovideo.json"
+NIJISAN_DATA_PATH  = "../_data/nijisan.json"
+OUPUT_PATH         = "../_data/nijivideo.json"
 
 NUMBER_OF_LATEST_VIDEOS = 3
 
@@ -46,14 +46,12 @@ def convert_url_to_playlistId(url):
 
 #Gets the channel urls from an json file
 def get_yt_channel_url():
-	with open(HOLOLIVE_DATA_PATH) as file:
-		holo_data = json.loads(file.read())
+	with open(NIJISAN_DATA_PATH) as file:
+		niji_data = json.loads(file.read())
 		playlistIds = []
-		for member in holo_data:
+		for member in niji_data:
 			playlistIds.append(
-				convert_url_to_playlistId(
-					member["url"].split("/")[-1]
-				)
+				convert_url_to_playlistId(member["youtube_url"])
 			)
 	return playlistIds
 
@@ -75,7 +73,7 @@ def main():
 		# Request the latest videos from the youtube data api.
 		items = get_latest_videos(id, NUMBER_OF_LATEST_VIDEOS)["items"]
 	
-		# Latest videos from one holomember
+		# Latest videos from one nijimember
 		channel_videos = []
 
 		# Extract the info we want from "items"
