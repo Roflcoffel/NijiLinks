@@ -342,5 +342,13 @@
 	   "twitch_url": "",
 	   "image_path":"assets/images/azki.jpg",
 	   "gen":"1"
-	 }
+	},
+	{
+		"name":"IRyS",
+		"region":"en",
+		"youtube_url":"UC8rcEBzJSleTkf_-agPM20g",
+		"twitch_url": "",
+		"image_path":"assets/images/irys.webp",
+		"gen":"2"
+ 	} 
 ]

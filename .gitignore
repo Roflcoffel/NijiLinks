@@ -2,9 +2,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,jekyll
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,jekyll
 
-### ssh-agent Add Key ###
-SSH_ADD
-
 ### Youtube API Key ###
 API_KEY
 

@@ -1,5 +1,10 @@
 .material-icons.md-48 { font-size: 48px; }
 
+img {
+  height: 176px; 
+  width: 176px;
+}
+
 body {
   margin-top: 80px;
   font-family: 'Work Sans', sans-serif;
